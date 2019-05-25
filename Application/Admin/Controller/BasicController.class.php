@@ -9,6 +9,7 @@ use Think\Exception;
 class BasicController extends CommonController {
 
 	public function index() {
+		//获取数据 并渲染到页面
 		$result = D("Basic")->select();
 		$this->assign('vo', $result);
 		$this->assign('type',1);

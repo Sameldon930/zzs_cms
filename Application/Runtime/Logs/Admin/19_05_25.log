@@ -1311,3 +1311,633 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000379s ]
 
+[ 2019-05-25T19:57:09+08:00 ] ::1 /admin.php?c=position
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000317s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+NOTIC: [2] Declaration of Admin\Controller\PositionController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) D:\laragon\www\zzs_cms\Application\Admin\Controller\PositionController.class.php 第 7 行.
+NOTIC: [2] Declaration of Common\Model\PositionModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\PositionModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0167s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` <> -1 ORDER BY id  [ RunTime:0.0041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\MenuModel.class.php 第 101 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0009s ]
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\laragon\www\zzs_cms\Application\Runtime\Cache\Admin\3a437f75b5b60a521a3ad0fc93a5ab5f.php 第 45 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Array to string conversion D:\laragon\www\zzs_cms\Application\Runtime\Cache\Admin\3a437f75b5b60a521a3ad0fc93a5ab5f.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001277s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001318s ]
+
+[ 2019-05-25T19:57:11+08:00 ] ::1 /admin.php?c=positioncontent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) D:\laragon\www\zzs_cms\Application\Admin\Controller\PositioncontentController.class.php 第 9 行.
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\laragon\www\zzs_cms\Application\Admin\Controller\PositioncontentController.class.php 第 9 行.
+NOTIC: [2] Declaration of Common\Model\PositionModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\PositionModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` = 1 ORDER BY id  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: title D:\laragon\www\zzs_cms\Application\Admin\Controller\PositioncontentController.class.php 第 14 行.
+NOTIC: [8] Undefined index: position_id D:\laragon\www\zzs_cms\Application\Admin\Controller\PositioncontentController.class.php 第 18 行.
+NOTIC: [2] Declaration of Common\Model\PositionContentModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\PositionContentModel.class.php 第 89 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: title D:\laragon\www\zzs_cms\Application\Common\Model\PositionContentModel.class.php 第 18 行.
+SQL: SELECT * FROM `cms_position_content` WHERE `status` <> -1 AND `position_id` = 2 ORDER BY listorder desc ,id desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\MenuModel.class.php 第 101 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\laragon\www\zzs_cms\Application\Runtime\Cache\Admin\b8a8b9d170e6c07d7b463ea02385894d.php 第 45 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined variable: title D:\laragon\www\zzs_cms\Application\Runtime\Cache\Admin\b8a8b9d170e6c07d7b463ea02385894d.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000727s ]
+
+[ 2019-05-25T19:57:15+08:00 ] ::1 /admin.php?c=position
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+NOTIC: [2] Declaration of Admin\Controller\PositionController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) D:\laragon\www\zzs_cms\Application\Admin\Controller\PositionController.class.php 第 7 行.
+NOTIC: [2] Declaration of Common\Model\PositionModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\PositionModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` <> -1 ORDER BY id  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\MenuModel.class.php 第 101 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\laragon\www\zzs_cms\Application\Runtime\Cache\Admin\3a437f75b5b60a521a3ad0fc93a5ab5f.php 第 45 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Array to string conversion D:\laragon\www\zzs_cms\Application\Runtime\Cache\Admin\3a437f75b5b60a521a3ad0fc93a5ab5f.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015629s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001142s ]
+
+[ 2019-05-25T19:57:19+08:00 ] ::1 /admin.php?c=position&a=edit&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+NOTIC: [2] Declaration of Admin\Controller\PositionController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) D:\laragon\www\zzs_cms\Application\Admin\Controller\PositionController.class.php 第 7 行.
+NOTIC: [2] Declaration of Common\Model\PositionModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\PositionModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cms_position` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0082s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\MenuModel.class.php 第 101 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\laragon\www\zzs_cms\Application\Runtime\Cache\Admin\6e054ea806dd64d4e864f84d36848cf9.php 第 45 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000468s ]
+
+[ 2019-05-25T19:57:22+08:00 ] ::1 /admin.php?c=positioncontent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) D:\laragon\www\zzs_cms\Application\Admin\Controller\PositioncontentController.class.php 第 9 行.
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\laragon\www\zzs_cms\Application\Admin\Controller\PositioncontentController.class.php 第 9 行.
+NOTIC: [2] Declaration of Common\Model\PositionModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\PositionModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` = 1 ORDER BY id  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: title D:\laragon\www\zzs_cms\Application\Admin\Controller\PositioncontentController.class.php 第 14 行.
+NOTIC: [8] Undefined index: position_id D:\laragon\www\zzs_cms\Application\Admin\Controller\PositioncontentController.class.php 第 18 行.
+NOTIC: [2] Declaration of Common\Model\PositionContentModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\PositionContentModel.class.php 第 89 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: title D:\laragon\www\zzs_cms\Application\Common\Model\PositionContentModel.class.php 第 18 行.
+SQL: SELECT * FROM `cms_position_content` WHERE `status` <> -1 AND `position_id` = 2 ORDER BY listorder desc ,id desc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\MenuModel.class.php 第 101 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\laragon\www\zzs_cms\Application\Runtime\Cache\Admin\b8a8b9d170e6c07d7b463ea02385894d.php 第 45 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined variable: title D:\laragon\www\zzs_cms\Application\Runtime\Cache\Admin\b8a8b9d170e6c07d7b463ea02385894d.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000525s ]
+
+[ 2019-05-25T19:57:28+08:00 ] ::1 /admin.php?c=positioncontent&a=edit&id=35
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) D:\laragon\www\zzs_cms\Application\Admin\Controller\PositioncontentController.class.php 第 9 行.
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\laragon\www\zzs_cms\Application\Admin\Controller\PositioncontentController.class.php 第 9 行.
+NOTIC: [2] Declaration of Common\Model\PositionContentModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\PositionContentModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cms_position_content` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Declaration of Common\Model\PositionModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\PositionModel.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` = 1 ORDER BY id  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\MenuModel.class.php 第 101 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\laragon\www\zzs_cms\Application\Runtime\Cache\Admin\7125ea1ecb2643e5c73f6fda1ddafd42.php 第 45 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2019-05-25T19:58:51+08:00 ] ::1 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001853s ]
+NOTIC: [2] Declaration of Common\Model\BasicModel::save($data = Array) should be compatible with Think\Model::save($data = '', $options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\BasicModel.class.php 第 9 行.
+NOTIC: [2] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\BasicModel.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\MenuModel.class.php 第 101 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\laragon\www\zzs_cms\Application\Runtime\Cache\Admin\bb97361d9e4731aec48331de29e1c4d1.php 第 45 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000785s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000825s ]
+
+[ 2019-05-25T19:59:00+08:00 ] ::1 /admin.php?c=basic&a=cache
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\MenuModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\laragon\www\zzs_cms\Application\Runtime\Cache\Admin\96607e5f2f4cf54441a3bd1a2c95c551.php 第 45 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031831s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006576s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006603s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000969s ]
+
+[ 2019-05-25T19:59:03+08:00 ] ::1 /admin.php?c=basic&a=cache
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000380s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\MenuModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\laragon\www\zzs_cms\Application\Runtime\Cache\Admin\96607e5f2f4cf54441a3bd1a2c95c551.php 第 45 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
+[ 2019-05-25T19:59:04+08:00 ] ::1 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+NOTIC: [2] Declaration of Common\Model\BasicModel::save($data = Array) should be compatible with Think\Model::save($data = '', $options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\BasicModel.class.php 第 9 行.
+NOTIC: [2] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\BasicModel.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\MenuModel.class.php 第 101 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\laragon\www\zzs_cms\Application\Runtime\Cache\Admin\bb97361d9e4731aec48331de29e1c4d1.php 第 45 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000714s ]
+
+[ 2019-05-25T20:12:53+08:00 ] ::1 /admin.php?c=basic&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+NOTIC: [2] Declaration of Common\Model\BasicModel::save($data = Array) should be compatible with Think\Model::save($data = '', $options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\BasicModel.class.php 第 9 行.
+NOTIC: [2] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\BasicModel.class.php 第 9 行.
+ERR: 1146:Table 'zzs_cms.cms_basic' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cms_basic`
+ERR: 1146:Table 'zzs_cms.cms_basic' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cms_basic`
+
+[ 2019-05-25T20:13:25+08:00 ] ::1 /admin.php?c=basic&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+NOTIC: [2] Declaration of Common\Model\BasicModel::save($data = Array) should be compatible with Think\Model::save($data = '', $options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\BasicModel.class.php 第 9 行.
+NOTIC: [2] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\BasicModel.class.php 第 9 行.
+
+[ 2019-05-25T20:13:26+08:00 ] ::1 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+NOTIC: [2] Declaration of Common\Model\BasicModel::save($data = Array) should be compatible with Think\Model::save($data = '', $options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\BasicModel.class.php 第 9 行.
+NOTIC: [2] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\BasicModel.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000329s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\MenuModel.class.php 第 101 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\laragon\www\zzs_cms\Application\Runtime\Cache\Admin\bb97361d9e4731aec48331de29e1c4d1.php 第 45 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033337s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000579s ]
+
+[ 2019-05-25T20:13:28+08:00 ] ::1 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002268s ]
+NOTIC: [2] Declaration of Common\Model\BasicModel::save($data = Array) should be compatible with Think\Model::save($data = '', $options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\BasicModel.class.php 第 9 行.
+NOTIC: [2] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\BasicModel.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\MenuModel.class.php 第 101 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\laragon\www\zzs_cms\Application\Runtime\Cache\Admin\bb97361d9e4731aec48331de29e1c4d1.php 第 45 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000804s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000840s ]
+
+[ 2019-05-25T20:13:29+08:00 ] ::1 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+NOTIC: [2] Declaration of Common\Model\BasicModel::save($data = Array) should be compatible with Think\Model::save($data = '', $options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\BasicModel.class.php 第 9 行.
+NOTIC: [2] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\BasicModel.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\MenuModel.class.php 第 101 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\laragon\www\zzs_cms\Application\Runtime\Cache\Admin\bb97361d9e4731aec48331de29e1c4d1.php 第 45 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000799s ]
+
+[ 2019-05-25T20:13:29+08:00 ] ::1 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+NOTIC: [2] Declaration of Common\Model\BasicModel::save($data = Array) should be compatible with Think\Model::save($data = '', $options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\BasicModel.class.php 第 9 行.
+NOTIC: [2] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\BasicModel.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000545s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\MenuModel.class.php 第 101 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\laragon\www\zzs_cms\Application\Runtime\Cache\Admin\bb97361d9e4731aec48331de29e1c4d1.php 第 45 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032797s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2019-05-25T20:13:30+08:00 ] ::1 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+NOTIC: [2] Declaration of Common\Model\BasicModel::save($data = Array) should be compatible with Think\Model::save($data = '', $options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\BasicModel.class.php 第 9 行.
+NOTIC: [2] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\BasicModel.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\MenuModel.class.php 第 101 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\laragon\www\zzs_cms\Application\Runtime\Cache\Admin\bb97361d9e4731aec48331de29e1c4d1.php 第 45 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018477s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000591s ]
+
+[ 2019-05-25T20:13:30+08:00 ] ::1 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+NOTIC: [2] Declaration of Common\Model\BasicModel::save($data = Array) should be compatible with Think\Model::save($data = '', $options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\BasicModel.class.php 第 9 行.
+NOTIC: [2] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\BasicModel.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\MenuModel.class.php 第 101 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0013s ]
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\laragon\www\zzs_cms\Application\Runtime\Cache\Admin\bb97361d9e4731aec48331de29e1c4d1.php 第 45 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030705s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2019-05-25T20:13:31+08:00 ] ::1 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+NOTIC: [2] Declaration of Common\Model\BasicModel::save($data = Array) should be compatible with Think\Model::save($data = '', $options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\BasicModel.class.php 第 9 行.
+NOTIC: [2] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\BasicModel.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\MenuModel.class.php 第 101 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\laragon\www\zzs_cms\Application\Runtime\Cache\Admin\bb97361d9e4731aec48331de29e1c4d1.php 第 45 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027297s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000447s ]
+
+[ 2019-05-25T20:13:31+08:00 ] ::1 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+NOTIC: [2] Declaration of Common\Model\BasicModel::save($data = Array) should be compatible with Think\Model::save($data = '', $options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\BasicModel.class.php 第 9 行.
+NOTIC: [2] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\BasicModel.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) D:\laragon\www\zzs_cms\Application\Common\Model\MenuModel.class.php 第 101 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant php - assumed 'php' D:\laragon\www\zzs_cms\Application\Runtime\Cache\Admin\bb97361d9e4731aec48331de29e1c4d1.php 第 45 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+NOTIC: [8] Undefined index: a D:\laragon\www\zzs_cms\Application\Common\Common\function.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025843s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+

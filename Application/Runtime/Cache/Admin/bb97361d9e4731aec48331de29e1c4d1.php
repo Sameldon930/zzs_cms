@@ -42,7 +42,7 @@
 <div id="wrapper">
 
   <?php
- $navs = D("Menu")->getAdminMenus(); php?>
+ $navs = D("Menu")->getAdminMenus(); $index = 'index'; php?>
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
@@ -71,7 +71,7 @@
   <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav side-nav nav_list">
-      <li <?php echo (getActive($index)); ?>>
+      <li <?php echo (getActive($index)); ?>><!--这种写法 相当于 调用函数 -->
         <a href="/admin.php"><i class="fa fa-fw fa-dashboard"></i> 首页</a>
       </li>
       <!-- 循环左侧菜单 -->

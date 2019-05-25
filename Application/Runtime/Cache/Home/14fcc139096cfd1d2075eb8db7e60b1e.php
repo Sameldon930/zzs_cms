@@ -40,7 +40,7 @@
 									<?php echo ($vo["description"]); ?>
 								</dd>
 								<dd class="news-info">
-									<?php echo ($vo["keywords"]); ?> <span><?php echo (date("Y-m-d H:i:s",$vo["create_time"])); ?></span> 阅读(<?php echo ($vo["count"]); ?>万)
+									<?php echo ($vo["keywords"]); ?> <span><?php echo (date("Y-m-d H:i:s",$vo["create_time"])); ?></span> 阅读(<?php echo ($vo["count"]); ?>)
 								</dd>
 							</dl><?php endforeach; endif; else: echo "" ;endif; ?>
 					<?php echo ($result['pageres']); ?>
