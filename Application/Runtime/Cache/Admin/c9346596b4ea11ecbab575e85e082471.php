@@ -42,113 +42,25 @@
 <div id="wrapper">
 
   <?php
- $navs = D("Menu")->getAdminMenus(); $index = 'index'; ?>
+ $navs = D("Menu")->getAdminMenus(); $index = 'index'; php?>
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
+    
     <a class="navbar-brand" >singcms内容管理平台</a>
   </div>
   <!-- Top Menu Items -->
   <ul class="nav navbar-right top-nav">
+    
+    
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
-      <ul class="dropdown-menu message-dropdown">
-        <li class="message-preview">
-          <a href="#">
-            <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-              <div class="media-body">
-                <h5 class="media-heading"><strong>John Smith</strong>
-                </h5>
-                <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                <p>Lorem ipsum dolor sit amet, consectetur...</p>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li class="message-preview">
-          <a href="#">
-            <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-              <div class="media-body">
-                <h5 class="media-heading"><strong>John Smith</strong>
-                </h5>
-                <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                <p>Lorem ipsum dolor sit amet, consectetur...</p>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li class="message-preview">
-          <a href="#">
-            <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-              <div class="media-body">
-                <h5 class="media-heading"><strong>John Smith</strong>
-                </h5>
-                <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                <p>Lorem ipsum dolor sit amet, consectetur...</p>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li class="message-footer">
-          <a href="#">Read All New Messages</a>
-        </li>
-      </ul>
-    </li>
-    <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
-      <ul class="dropdown-menu alert-dropdown">
-        <li>
-          <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
-        </li>
-        <li>
-          <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
-        </li>
-        <li>
-          <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
-        </li>
-        <li>
-          <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
-        </li>
-        <li>
-          <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
-        </li>
-        <li>
-          <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
-        </li>
-        <li class="divider"></li>
-        <li>
-          <a href="#">View All</a>
-        </li>
-      </ul>
-    </li>
-    <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo getLoginUsername()?> <b class="caret"></b></a>
       <ul class="dropdown-menu">
         <li>
-          <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+          <a href="/admin.php?c=admin&a=personal"><i class="fa fa-fw fa-user"></i> 个人中心</a>
         </li>
-        <li>
-          <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
-        </li>
+       
         <li class="divider"></li>
         <li>
           <a href="/admin.php?c=login&a=loginout"><i class="fa fa-fw fa-power-off"></i> 退出</a>
@@ -159,12 +71,16 @@
   <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav side-nav nav_list">
-      <li <?php echo (getActive($index)); ?>>
+      <li <?php echo (getActive($index)); ?>><!--这种写法 相当于 调用函数 -->
         <a href="/admin.php"><i class="fa fa-fw fa-dashboard"></i> 首页</a>
       </li>
-      <?php if(is_array($navs)): $i = 0; $__LIST__ = $navs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$navo): $mod = ($i % 2 );++$i;?><li <?php echo (getActive($navo["c"])); ?>>
-        <a href="<?php echo (getAdminMenuUrl($navo)); ?>"><i class="fa fa-fw fa-bar-chart-o"></i> <?php echo ($navo["name"]); ?></a>
-      </li><?php endforeach; endif; else: echo "" ;endif; ?>
+      <!-- 循环左侧菜单 -->
+      <?php if(is_array($navs)): $i = 0; $__LIST__ = $navs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?><li <?php echo (getActive($nav["c"])); ?>>
+          <a href="<?php echo (getAdminMenuUrl($nav)); ?>">
+            <i class="fa fa-fw fa-bar-chart-o"></i> 
+            <?php echo ($nav["name"]); ?>
+          </a>
+        </li><?php endforeach; endif; else: echo "" ;endif; ?>
 
     </ul>
   </div>

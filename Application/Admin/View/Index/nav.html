@@ -1,13 +1,9 @@
 <?php
+  //获取数据库中的菜单列表
   $navs = D("Menu")->getAdminMenus();
-  $username = getLoginUsername();
-  foreach($navs as $k=>$v) {
-    if($v['c'] == 'admin' && $username != 'admin') {
-      unset($navs[$k]);
-    }
-  }
   $index = 'index';
-?>
+
+php?>
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
@@ -36,13 +32,17 @@
   <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav side-nav nav_list">
-      <li {$index|getActive}>
+      <li {$index|getActive}><!--这种写法 相当于 调用函数 -->
         <a href="/admin.php"><i class="fa fa-fw fa-dashboard"></i> 首页</a>
       </li>
-      <volist name="navs" id="navo">
-      <li {$navo.c|getActive}>
-        <a href="{$navo|getAdminMenuUrl}"><i class="fa fa-fw fa-bar-chart-o"></i> {$navo.name}</a>
-      </li>
+      <!-- 循环左侧菜单 -->
+      <volist name="navs" id="nav">
+        <li {$nav.c|getActive}>
+          <a href="{$nav|getAdminMenuUrl}">
+            <i class="fa fa-fw fa-bar-chart-o"></i> 
+            {$nav.name}
+          </a>
+        </li>
       </volist>
 
     </ul>

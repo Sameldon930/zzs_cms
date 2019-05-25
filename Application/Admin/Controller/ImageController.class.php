@@ -14,6 +14,7 @@ class ImageController extends CommonController {
     public function __construct() {
 
     }
+    //异步上传的方法
     public function ajaxuploadimage() {
         $upload = D("UploadImage");
         $res = $upload->imageUpload();
@@ -24,6 +25,7 @@ class ImageController extends CommonController {
         }
 
     }
+    
     public function kindupload(){
         $upload = D("UploadImage");
         $res = $upload->upload();

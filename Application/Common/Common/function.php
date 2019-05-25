@@ -39,8 +39,9 @@ function getAdminMenuUrl($nav) {
     }
     return $url;
 }
-//选中左侧菜单的时候 呈现选中的状态
+//选中左侧菜单的时候 呈现选中的高亮状态
 function getActive($navc){
+    //获取当前控制器名字 然后选中的控制器的菜单栏对应当前的控制名字 加上一个class
     $c = strtolower(CONTROLLER_NAME);
     if(strtolower($navc) == $c) {
         return 'class="active"';

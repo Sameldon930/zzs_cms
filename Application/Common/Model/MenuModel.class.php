@@ -81,8 +81,8 @@ class MenuModel extends  Model {
     public function getAdminMenus() {
         //过滤关闭和删除的菜单
         $data = array(
-            'status' => array('neq',-1),
-            'type' => 1,
+            'status' => array('neq',-1),//不是删除状态
+            'type' => 1,//类型为1
         );
         return $this->_db->where($data)->order('listorder desc,menu_id desc')->select();
     }

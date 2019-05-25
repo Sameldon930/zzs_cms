@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!-- /.navbar-collapse --><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -42,7 +42,7 @@
 <div id="wrapper">
 
   <?php
- $navs = D("Menu")->getAdminMenus(); $username = getLoginUsername(); foreach($navs as $k=>$v) { if($v['c'] == 'admin' && $username != 'admin') { unset($navs[$k]); } } $index = 'index'; ?>
+ $navs = D("Menu")->getAdminMenus(); $index = 'index'; php?>
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
@@ -71,12 +71,16 @@
   <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav side-nav nav_list">
-      <li <?php echo (getActive($index)); ?>>
+      <li <?php echo (getActive($index)); ?>><!--这种写法 相当于 调用函数 -->
         <a href="/admin.php"><i class="fa fa-fw fa-dashboard"></i> 首页</a>
       </li>
-      <?php if(is_array($navs)): $i = 0; $__LIST__ = $navs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$navo): $mod = ($i % 2 );++$i;?><li <?php echo (getActive($navo["c"])); ?>>
-        <a href="<?php echo (getAdminMenuUrl($navo)); ?>"><i class="fa fa-fw fa-bar-chart-o"></i> <?php echo ($navo["name"]); ?></a>
-      </li><?php endforeach; endif; else: echo "" ;endif; ?>
+      <!-- 循环左侧菜单 -->
+      <?php if(is_array($navs)): $i = 0; $__LIST__ = $navs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?><li <?php echo (getActive($nav["c"])); ?>>
+          <a href="<?php echo (getAdminMenuUrl($nav)); ?>">
+            <i class="fa fa-fw fa-bar-chart-o"></i> 
+            <?php echo ($nav["name"]); ?>
+          </a>
+        </li><?php endforeach; endif; else: echo "" ;endif; ?>
 
     </ul>
   </div>
